@@ -33,3 +33,8 @@ class TestBinarySearch:
         steps = BinarySearch.solve(stack, 42)
         expect(steps).to(equal(1))
 
+    def test_single_element_list(self) -> None:
+        stack = [42]
+        steps = BinarySearch.solve(stack, 42)
+        expect(steps).to(equal(1))
+
